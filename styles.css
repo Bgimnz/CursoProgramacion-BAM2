@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #b3d9e2;
+}
+
+.header {
+  background-color: #77c0eb;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 10px 10%;
+}
+
+.header .logo img {
+  cursor: pointer;
+  height: 80px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header.nav-links a {
+  font-size: 700;
+  color: white;
+}
+
+.header .boton button {
+  font-weight: 700;
+  font-size: 19px;
+  color: #0237d6;
+  padding: 9px 25px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .boton button:hover {
+  background-color: #e2f1f8;
+  color: black;
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.slider-frame {
+  text-align: center;
+}
+
+main {
+  background: red;
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #77c0eb;
+  width: 100%;
+  height: auto;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.terminos {
+  max-width: 350px;
+  margin-top: 70px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #7a7a7a;
+  font-weight: 700;
+}
+
+.box_footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box_footer a:hover {
+  opacity: 0.5;
+}
+
+.box_copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box_copyright p {
+  margin-top: 5px;
+}
+
+.izquierdo {
+  background: blueviolet;
+  width: 50%;
+}
+
+.derecho {
+  background: yellow;
+  width: 50%;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.cuadrado {
+  background: #ecf0f1;
+  padding: 1em;
+}
+
+.cuadrado:hover {
+  border: 1px solid #f1c40f;
+}
+
