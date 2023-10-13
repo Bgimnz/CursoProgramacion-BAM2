@@ -8,7 +8,13 @@
 }
 
 body {
-  background-color: #b3d9e2;
+  background-color: #0237d6;
+}
+
+#barra {
+  cursor: pointer;
+  background: #07051a;
+  color: white;
 }
 
 .header {
@@ -32,15 +38,20 @@ body {
   transform: scale(1.1);
 }
 
-.header .nav-links li {
+.header .menu li {
   list-style: none;
   display: inline-block;
+  margin: auto;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
   padding: 0 20px;
 }
 
-.header.nav-links a {
-  font-size: 700;
-  color: white;
+.menu li a:hover {
+  background: #ef8354;
 }
 
 .header .boton button {
@@ -160,4 +171,3 @@ footer {
 .cuadrado:hover {
   border: 1px solid #f1c40f;
 }
-
