@@ -14,21 +14,22 @@
     <header class="header">
       <div class="logo">
         <img src="img/sollogo.png" alt="prueba-png-sol" />
-        TOTO Articulos de Limpieza
       </div>
+      <p>TOTO Articulos de Limpieza</p>
       <nav>
         <ul class="menu">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#">Envios</a></li>
-          <li><a href="#">Promos</a></li>
           <li><a href="#">Nosotros</a></li>
           <li><a href="#">Mas</a></li>
         </ul>
       </nav>
-      <form id="barra" action="" method="get">
-        <input type="search" required>
-        <i class="fa fa-search"></i>
+      <form id="barra-busqueda" action="" method="get">
+        <input type="search" required placeholder="Escriba Aquí...">
+        <a href="#">
+        <i class="fa fa-search icon"></i>
+        </a>
       </form>
       <a href="#" class="boton"><button>Contacto</button></a>
     </header>
@@ -36,13 +37,13 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="img/portada.jpg" class="d-block w-100" alt="...">
+          <img src="https://images.unsplash.com/photo-1583907659441-addbe699e921?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="d-block w-50" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/algo.jpeg" class="d-block w-100" alt="...">
+          <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="d-block w-50" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/lamesa.jpg" class="d-block w-100" alt="...">
+          <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="d-block w-50" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -54,15 +55,85 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <br>
-    <main>
+
+    <div class="grilla">
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO1</h2>
+          <p class="descripcion">Contiene 1 Unidades o 1 Litros</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO2</h2>
+          <p class="descripcion">Contiene 2 Unidades o 2 Litros</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO3</h2>
+          <p class="descripcion">Contiene 3 Unidades o 3 Litros</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO4</h2>
+          <p class="descripcion">Contiene 4 Unidades o 4 Litros</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO5</h2>
+          <p class="descripcion">Contiene 5 Unidades o 5 Litros</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      <div class="item">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </figure>
+        <div class="info-producto">
+          <h2>Algo de ALGO</h2>
+          <p class="descripcion">Contiene dasdasdasdsdas</p>
+          <button>DISPONIBLE</button>
+        </div>
+      </div>
+      
+    </div>
+    
+    <br>
+
+    <main> 
       <section class="izquierdo">
-        <h3>Esto es un titulo de la imagen</h3>
-        <img src="img/cascadas1.png" alt="ejemplo" width="100%">
+        <h3>MAPA</h3>
         <article>
-          Esto trata sobre la imagen: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatem possimus pariatur totam ullam, dignissimos, eveniet vero laudantium repellendus, error quas iste temporibus! Numquam, dicta pariatur laborum ut quas magnam.
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42910.4411836757!2d-58.40809593932623!3d-34.634688013607345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697571835796!5m2!1ses-419!2sar" width="100%" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         </article>
       </section>
+
       <aside class="derecho">
         <!-- Aca podria ir otra imagen-->
         Lado Derecho Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam error hic maiores id eos laudantium perferendis cupiditate, quae doloribus. Quasi voluptas alias totam saepe. Laborum, sapiente! Suscipit, ut ratione
@@ -72,24 +143,17 @@
       </aside>
     </main>
 
-    <br>
-
-    <section class="grilla">
-      <div class="cuadrado">Hola buenas tardes</div>
-      <div class="cuadrado">Hola buenas tardes</div>
-      <div class="cuadrado">Hola buenas tardes</div>
-      <div class="cuadrado">Hola buenas tardes</div>
-      <div class="cuadrado">Hola buenas tardes</div>
-      <div class="cuadrado">Hola buenas tardes</div>
-    </section>
-
-    <hr>
 
     <footer>
       <div class="container_footer">
         <div class="terminos">
           <h2>El Local</h2>
-          <p><b>Lorem</b> ipsum dolor sit amet consectetur, adipisicing elit. Earum, molestiae eius! Ex quo ea rem velit! A impedit quisquam consequuntur consequatur, aspernatur ducimus obcaecati, repellat quidem tempore corporis hic amet.</p>
+          <p><b>Toto Limpieza</b> es una Empresa que se destaca por tener las mejores marcas, mejores precios y la mejor calidad de atención personalizada y amable. 
+          <br>
+          Somos Minoristas de productos y Articulos de limpieza profesional como tambien poseemos Productos Quimicos sueltos de la mejor calidad/precio. 
+          <br>
+          Logramos Sastifacer la demanda de nuestros clientes ante una necesidad del especifica en cuanto a limpieza.
+          </p>
           <br>
           <i class="far fa-clock mr-1" aria-hidden="true">HORARIOS DE ATENCIÓN</i>
           <p>Lunes a Sabados 
@@ -101,7 +165,7 @@
         </div>
 
         <div class="box_footer">
-          <h2>Fuentes</h2>
+          <h2>Categorías</h2>
           <a href="#">asdasda1</a>
           <a href="#">asdasda2</a>
           <a href="#">asdasda3</a>
@@ -109,7 +173,7 @@
         </div>
 
         <div class="box_footer">
-          <h2>Recomendaciones</h2>
+          <h2>Navegar</h2>
           <a href="#">arar1</a>
           <a href="#">arar2</a>
           <a href="#">arar3</a>
@@ -118,9 +182,8 @@
 
         <div class="box_footer">
           <h2>Contacto</h2>
+          <i class="fas fa-map-marker-alt mr-1" aria-hidden="true">DIRECCIÓN</i>
           <p>
-            <i class="fas fa-map-marker-alt mr-1" aria-hidden="true">DIRECCIÓN</i>
-            <br>
             Centenario Uruguayo 1111 
             <br>
             Lanús - Buenos Aires
@@ -130,9 +193,9 @@
           <br>
           <i class="fab fa-whatsapp mr-1" aria-hidden="true">WHATSAPP</i>
           <br>
-          +54 11-1111-1111 
-          <a href="#">Contactar</a>
-          <a href="#">Maps</a>
+          <p>+54 11-1111-1111 </p>  
+          <i class="fa fa-phone"><a href="#">Contactar</a></i>
+          <i class="fa fa-location-arrow"><a href="#">Maps</a></i>
         </div>
         </div>
       <div class="box_copyright"
