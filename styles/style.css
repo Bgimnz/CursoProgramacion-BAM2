@@ -358,33 +358,56 @@ main {
 
 #local {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
 }
 
+#local .renglon-local {
+  margin-top: 30px;
+}
+
+/*#local .horario {
+  
+}*/
+
 #local img {
-  width: 800px;
+  width: 850px;
+  margin: 15px;
 }
 
 #local i {
-  color: white;
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  margin-left: 30%;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #local h2 {
   margin-bottom: 30px;
-  color: #001aff;
+  color: #ff0000;
   font-weight: 800;
-  text-align: left;
+  text-align: center;
+  font-size: 60px;
 }
 
-#local h3 {
+#local article p {
   margin-bottom: 30px;
-  color: #fbff00;
-  font-weight: 800;
+  color: #000000;
+  font-weight: 500;
   text-align: left;
+  font-size: 25px;
+  margin-left: 30%;
 }
 
-
+#local .renglon-local p {
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1.2;
+  text-indent: 10px;
+  color: #292626;
+}
 
 /**PRODUCTOS*/
 
