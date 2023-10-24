@@ -13,9 +13,8 @@ body {
 }
 
 /*!Media Queries*/
-
-@media (max-width:992px) {
-  .header {
+@media (max-width:1200px) {
+  header {
     flex-direction: column;
   }
 
@@ -23,7 +22,7 @@ body {
     padding: 10px 0;
   }
 
-  .header p {
+  header p {
     padding: auto;
   }
   
@@ -32,8 +31,8 @@ body {
   }
 }
 
-@media (max-width:768px) {
-  .header {
+@media (max-width:992px) {
+  header {
     flex-direction: column;
   }
 
@@ -41,7 +40,26 @@ body {
     padding: 10px 0;
   }
 
-.header p {
+  header p {
+    padding: auto;
+  }
+  
+  .boton {
+    padding: 20px;
+  }
+
+}
+
+@media (max-width:768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+header p {
   padding: auto;
 }
 
@@ -51,13 +69,26 @@ body {
 }
 
 @media (max-width:480px) {
+  /**TERMINAR*/
+  /*TODO Menu Desplegable*/
 
+header #menu {
+  display: none;
+}
+
+header a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
 }
 
 
 /*!HEADER*/
 
-.header {
+header {
   background-color: #59b6ec;
   font-size: 19px;
   display: flex;
@@ -67,7 +98,7 @@ body {
   padding: 10px 10%;
 }
 
-.header p {
+header p {
   display: flex;
   color: #ff7b00;
   padding-top: 15px;
@@ -76,18 +107,18 @@ body {
   text-shadow: 2px 2px #f2340f, 3px 3px 0 black;
 }
 
-.header .logo img {
+header .logo img {
   display: flex;
   height: 80px;
   width: auto;
   transition: all 0.3s;
 }
 
-.header .logo img:hover {
+header .logo img:hover {
   transform: scale(1.1);
 }
 
-.header .menu li {
+header .menu li {
   list-style: none;
   display: inline-block;
   margin: auto;
@@ -126,7 +157,7 @@ body {
   padding: 0 20px 0 20px;
 }
 
-.header .boton button {
+header .boton button {
   font-weight: 700;
   font-size: 19px;
   color: #0237d6;
@@ -138,13 +169,13 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.header .boton button:hover {
+header .boton button:hover {
   background-color: #e2f1f8;
   color: black;
   transform: scale(1.1);
 }
 
-/*!Carrusel A MANO COMO DEBE SER*/
+/*!Carrusel A MANO*/
 
 h1 {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -194,8 +225,8 @@ h1 {
 }
 
 .slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background-color: #ffff;
   opacity: 0.75;
@@ -213,36 +244,22 @@ footer {
   width: 100%;
   height: auto;
   padding: 50px 100px;
-}
-
-.container_footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-content: stretch;
 }
 
 .box_footer {
-  display: flex;
-  flex-direction: column;
   padding: 50px;
   font-size: 20px;
-}
-
-.terminos {
+  width: 250px;
   max-width: 350px;
   font-weight: 500;
-  color: #000000;
   font-size: 20px;
-}
-
-.terminos h2 {
-  font-weight: 800px;
-  color: #ffeb0f;
-  text-align: left;
-}
-
-.terminos strong {
-  color: #fdeebb;
+  flex-grow: 1;
 }
 
 footer p {
@@ -251,31 +268,38 @@ footer p {
 
 footer i {
   font-weight: bold;
+  color: #00ff0d;
 }
 
 .box_footer h2 {
   margin-bottom: 30px;
   color: #ffeb0f;
-  font-weight: 700;
+  font-weight: 800;
+  text-align: center;
 }
 
 .box_footer a {
+  display: block;
   margin-top: 10px;
-  color: #ffeb0f;
+  color: #ffcc00;
   font-weight: 600;
   line-height: 2;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .box_footer a:hover {
   opacity: 0.5;
 }
 
+/*?Cajita Derechos de Autor*/
+
 .box_copyright {
-  max-width: 1200px;
+  background-color: rgb(255, 230, 0);
   margin: auto;
   text-align: center;
   padding: 0px 40px;
+  font-size: large;
 }
 
 .box_copyright p {
@@ -294,11 +318,12 @@ main {
   align-items: center;
 }
 
-.izquierdo {
-  width: 60%;
+.derecho {
+  width: 40%;
+  padding-right: 30px;
 }
 
-.izquierdo h3 {
+.derecho h3 {
   font-size: 30px;
   color: black;
   font-size: 3rem;
@@ -306,19 +331,20 @@ main {
   padding-top: 20px;
 }
 
-.derecho {
-  width: 40%;
+.izquierdo {
+  width: 60%;
+  padding-inline: 30px;
   text-align: center;
   font-size: 25px;
 }
 
-.derecho h2 {
+.izquierdo h2 {
   font-size: 3em;
   font-weight: 900;
   color: #2359c9;
 }
 
-.derecho p {
+.izquierdo p {
   font-style: italic;
   line-height: 1.6;
   text-indent: 50px;
@@ -329,6 +355,36 @@ main {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+#local {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#local img {
+  width: 800px;
+}
+
+#local i {
+  color: white;
+}
+
+#local h2 {
+  margin-bottom: 30px;
+  color: #001aff;
+  font-weight: 800;
+  text-align: left;
+}
+
+#local h3 {
+  margin-bottom: 30px;
+  color: #fbff00;
+  font-weight: 800;
+  text-align: left;
+}
+
+
 
 /**PRODUCTOS*/
 
