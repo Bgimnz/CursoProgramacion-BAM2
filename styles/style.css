@@ -29,6 +29,10 @@ body {
   .boton {
     padding: 20px;
   }
+
+  .carousel img {
+    width: calc(100%/2);
+  }
 }
 
 @media (max-width:992px) {
@@ -48,6 +52,9 @@ body {
     padding: 20px;
   }
 
+  .carousel img {
+    width: calc(100%/2);
+  }
 }
 
 @media (max-width:768px) {
@@ -66,6 +73,10 @@ header p {
 .boton {
   padding: 20px;
 }
+
+.carousel img {
+  width: 100%;
+}
 }
 
 @media (max-width:480px) {
@@ -82,6 +93,10 @@ header a {
   text-decoration: none;
   font-size: 17px;
   display: block;
+}
+
+.carousel img {
+  width: 100%;
 }
 }
 
@@ -268,7 +283,15 @@ footer p {
 
 footer i {
   font-weight: bold;
-  color: #00ff0d;
+  color: #fdfb6f;
+}
+
+.box_footer #ig {
+  color: #ffeb77;
+  font-weight: 600;
+  line-height: 2;
+  text-decoration: none;
+  margin: 0;
 }
 
 .box_footer h2 {
@@ -278,10 +301,46 @@ footer i {
   text-align: center;
 }
 
+.box_footer form {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.box_footer label {
+  font-weight: 800;
+  font-size: 23px;
+  color: #fdfb6f;
+  line-height: 40px;
+}
+
+.box_footer input {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.box_footer #suscribir {
+  padding: 0 40px;
+  background-color: #c00000;
+  color: #e2f1f8;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.box_footer #suscribir:hover {
+  opacity: 0.5;
+  color: #000000;
+  background-color: #e2f1f8;
+}
+
 .box_footer a {
   display: block;
   margin-top: 10px;
-  color: #ffcc00;
+  color: #ffdc52;
   font-weight: 600;
   line-height: 2;
   white-space: nowrap;
@@ -467,3 +526,63 @@ main {
   cursor: pointer;
 }
 
+/*! Nuestras Marcas*/
+
+.marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+  position: relative;
+  padding-inline: 100px;
+}
+
+.marcas i {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-inline: 100px;
+}
+
+.marcas i:first-child {
+  left: -23px;
+}
+
+.marcas i:last-child {
+  right: -23px;
+}
+
+.marcas .carousel {
+  white-space: nowrap;
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel img {
+  height: 400px;
+  width: calc(100%/3);
+  object-fit: cover;
+  margin-left: 14px;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+.carousel .dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel .dragging img {
+  pointer-events: none;
+}

@@ -225,13 +225,25 @@
     </main>
 
     <!--Poner un slider de imagenes o algo interesante que capte la atención-->
-    <div class="recomendado">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt quisquam quam aspernatur optio omnis, commodi officiis molestiae veniam sunt nesciunt quae ex minima deleniti fugiat provident autem. Labore, dolores?
-    <!--<img src="img/messi-durmiendo.png" alt="prueba">-->
+    <script src="js/script-marcas.js" defer></script>
+    <article class="marcas">
+      <i id="left" class="fa fa-angle-left"></i>
+      <div class="carousel">
+        <img src="https://cdn.pixabay.com/photo/2022/07/24/17/55/wind-energy-7342177_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2018/01/23/05/40/brussels-sprouts-3100702_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2017/08/22/10/47/washing-machine-2668472_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2015/08/08/13/28/drop-880462_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2014/02/17/14/28/vacuum-cleaner-268179_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/10/22/15/32/water-1761027_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2017/06/15/08/10/drops-2404441_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/03/26/20/29/water-1281247_960_720.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/06/10/01/05/hotel-room-1447201_960_720.jpg" alt="">
     </div>
+    <i id="right" class="fa fa-angle-right"></i>
+    </article>
     
     <br>
-    <!--Arreglar y ver si lo pongo en el footer y despues fijarme de crear otra pagina del local, ver lo de media querie con el tema de esconder terminos en el footer estando en celular-->
+    <!--fijarme de crear otra pagina del local, ver lo de media querie con el tema de esconder terminos en el footer estando en celular-->
     
     <section id="local">
       <div class="renglon-local">
@@ -258,8 +270,18 @@
 
     <footer>
         <div class="box_footer">
-          <h2>Buenas Tardes</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi a facilis iure distinctio, error necessitatibus! In quas voluptatem facilis commodi! Fugit pariatur itaque nulla laboriosam sapiente corporis quod illo magni.</p>
+          <h2>NewsLetter</h2>
+          <form action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" required name="nombre" id="nombre" placeholder="Escriba Aquí">
+            <br>
+
+            <label for="mail">Correo Electronico</label>
+            <input type="mail" required name="mail" id="mail" placeholder="Escriba Aquí">
+            <br>
+
+            <input type="submit" id="suscribir" value="Suscribirse">
+          </form>
         </div>
 
         <div class="box_footer">
@@ -293,6 +315,9 @@
           <i class="fab fa-whatsapp mr-1" aria-hidden="true">WHATSAPP</i>
           <br>
           <p>+54 11-1111-1111 </p>  
+          <br>
+          <i class="fab fa-instagram">INSTAGRAM</i>
+          <a href="https://www.instagram.com" target="_blank" id="ig">@Toto.Limpieza</a>
         </div>
 
     </footer>
