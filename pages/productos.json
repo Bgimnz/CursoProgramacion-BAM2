@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Broches Arcoiris",
+        "descrip": "x12 Broches Muticolor",
+        "estado": "Disponible",
+        "img": "../img-productos/broches.png"
+    },
+    {
+        "id": 2,
+        "title": "Jabón Dove",
+        "descrip": "Jabón Cremoso Original",
+        "estado": "Disponible",
+        "img": "../img-productos/dove-jabon.png"
+    },
+    {
+        "id": 3,
+        "title": "Papel Higienico Elegante",
+        "descrip": "Papel Higienico 4 x 80 m",
+        "estado": "No Disponible",
+        "img": "../img-productos/elegante-papel-higienico.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Pala de Mano Marlim",
+        "descrip": "Pala de Plastico Reforzada",
+        "estado": "No Disponible",
+        "img": "../img-productos/pala-plastico.png"
+    },
+    {
+        "id": 5,
+        "title": "Jabón Seiseme",
+        "descrip": "Jabón Blanco SEISEME",
+        "estado": "Disponible",
+        "img": "../img-productos/seiseme.png"
+    },
+    {
+        "id": 6,
+        "title": "Jabón Liquido Tipo ALA",
+        "descrip": "Bidon de 5L Tipo ALA",
+        "estado": "Disponible",
+        "img": "../img-productos/bidon-tipo-ala.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Trapo Buena Mandarina",
+        "descrip": "Trapo de Cocina estilo Rejilla",
+        "estado": "Disponible",
+        "img": "../img-productos/trapo-cocina.png"
+    },
+    {
+        "id": 3,
+        "title": "Sachet 3L Skip",
+        "descrip": "Jabón Liquido para lavar la ropa",
+        "estado": "No Disponible",
+        "img": "../img-productos/skip-liquido.jpeg"
+    }
+]
