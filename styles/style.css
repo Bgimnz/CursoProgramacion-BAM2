@@ -33,9 +33,21 @@ body {
   .carousel img {
     width: calc(100%/2);
   }
+
+  #local {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #local img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width:1000px) {
   header {
     flex-direction: column;
   }
@@ -55,15 +67,19 @@ header p {
 .carousel img {
   width: 100%;
 }
+
+.ver-cata {
+  display: flex;
+  flex-direction: row;
 }
 
-@media (max-width:480px) {
-  /**TERMINAR*/
-  /*TODO Menu Desplegable*/
-
-header #menu {
+.derecho {
   display: none;
 }
+
+}
+
+@media (max-width:536px) {
 
 header a {
   color: white;
@@ -71,11 +87,13 @@ header a {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  font-size: 15px;
 }
 
 .carousel img {
   width: 100%;
 }
+
 }
 
 
@@ -331,16 +349,14 @@ footer i {
 main {
   background-image: url(../img/fondo2.jpg);
   font-size: 18px;
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .derecho {
-  width: 40%;
-  padding-right: 30px;
+  width: 1000px;
+  padding-right: 20px;
 }
 
 .derecho h3 {
@@ -352,7 +368,7 @@ main {
 }
 
 .izquierdo {
-  width: 60%;
+  width: 1300px;
   padding-inline: 30px;
   text-align: center;
   font-size: 25px;
@@ -383,11 +399,8 @@ main {
 
 #local .renglon-local {
   margin-top: 30px;
+  margin-bottom: 20px;
 }
-
-/*#local .horario {
-  
-}*/
 
 #local img {
   width: 850px;

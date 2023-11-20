@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="milanesa,recetas">
     <title>Proyecto de Pagina</title>
+    <link rel="icon" href="../img/sollogo.png">
     <link rel="stylesheet" href="../styles/productos-style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <div class="logo">
         <img src="../img/logo.png" alt="logo-empresa" />
       </div>
@@ -22,37 +23,29 @@
           <li><a href="../index.html#local">Local</a></li>
         </ul>
       </nav>
-      <a href="#" class="boton"><button>Contacto</button></a>
+      <a href="https://www.whatsapp.com/" target="_blank" class="boton"><button>Contacto</button></a>
     </header>
     
     <br>
-    
+    <div id="titu">
     <h2>PRODUCTOS DESTACADOS</h2>
-
+    </div>
     <br>
     
     <script src="../js/productos.js" defer></script>
+    <!--<script src="../js/producto-filtro.js" defer></script>-->
+    
     <div class="grilla">
+    <ul class="botones">
+      <button class="botn active" data-filter="all">TODO </button>
+      <button class="botn" data-filter="liquidos">Líquidos</button>
+      <button class="botn" data-filter="marca">Artículos de Marca</button>
+      <button class="botn" data-filter="quimicos">Químicos</button>
+      <button class="botn" data-filter="papeles">Papeles</button>
+    </ul>
 
-    <div class="botones">
-      <button class="botn">TODO</button>
-      <button class="botn">Líquidos</button>
-      <button class="botn">Artículos de Marca</button>
-      <button class="botn">Químicos</button>
-      <button class="botn">Papeles</button>
-    </div>
-
-    <div class="objetos">
-      <div class="item">Hola1</div>
-      <div class="item">Hola2</div>
-      <div class="item">Hola3</div>
-      <div class="item">Hola4</div>
-      <div class="item">Hola5</div>
-      <div class="item">Hola6</div>
-      <div class="item">Hola7</div>
-      <div class="item">Hola8</div>
-      <div class="item">Hola9</div>
-      <div class="item">Hola10</div>
+    <div class="objetos" id="catal">
+    <!--Aca javascript mete el HTML-->
     </div>
   
   </div>

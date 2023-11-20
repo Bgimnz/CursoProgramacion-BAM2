@@ -1,4 +1,5 @@
-[
+{
+    "products": [   
     {
         "id": 1,
         "title": "Broches Arcoiris",
@@ -56,3 +57,4 @@
         "img": "../img-productos/skip-liquido.jpeg"
     }
 ]
+}
