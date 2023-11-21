@@ -3,7 +3,7 @@ const catalogo =  [
             "id": 1,
             "title": "Broches Arcoiris",
             "descrip": "x12 Broches Muticolor",
-            "estado": "Disponible",
+            "estado": "No Disponible",
             "categoria": "marca",
             "img": "../img-productos/broches.png"
         },
@@ -19,7 +19,7 @@ const catalogo =  [
             "id": 3,
             "title": "Papel Higienico Elegante",
             "descrip": "Papel Higienico 4 x 80 m",
-            "estado": "No Disponible",
+            "estado": "Disponible",
             "categoria": "papeles",
             "img": "../img-productos/elegante-papel-higienico.jpg"
         },
@@ -43,7 +43,7 @@ const catalogo =  [
             "id": 6,
             "title": "Jabón Liquido Tipo ALA",
             "descrip": "Bidon de 5L Tipo ALA",
-            "estado": "Disponible",
+            "estado": "No Disponible",
             "categoria": "liquidos",
             "img": "../img-productos/bidon-tipo-ala.jpg"
         },
@@ -52,6 +52,7 @@ const catalogo =  [
 
 let item = document.getElementById("catal");
 
+//!Crea el catalogo de productos metiendo html en el div de catal
 catalogo.map((producto) => {
 
     item.innerHTML+= `
@@ -67,12 +68,16 @@ catalogo.map((producto) => {
 }
 )
 
+//! Color de los Botones según el Estado (si esta disponible o no)
+const botonEstado = document.querySelectorAll('.estado');
 
+botonEstado.forEach((boton) => {
+    const estado = boton.textContent.trim();
 
-//<div class="${producto.categoria}"></div>
-//necesito que java ponga la clase a cada producto segun su categoria y asi pueda ser filtrado por el otro script
+    if (estado === 'Disponible') {
+        boton.setAttribute("style", "background: green; color: white;");
+    } else {
+        boton.setAttribute("style", "background: red; color: white;");
+    }
+});
 
-
-/*const filtrarProducto = (categoria) => {
-    const updatedList = catalogo.filter((x)=> x.categoria === categoria);
-}*/
