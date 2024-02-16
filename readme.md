@@ -29,4 +29,4 @@ https://bgimnz.github.io/CursoProgramacion-BAM2/
 
 ## Autor 🚬
 
-_Gomez Braian BAM 2.0_
+_Bgimnz BAM 2.0_
